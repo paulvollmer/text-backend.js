@@ -2,11 +2,21 @@
   "name": "text-backend.js",
   "version": "0.1.0",
   "description": "text writer with level support",
+  "keywords": ["text", "backend", "source", "code", "generator"],
   "author": "Paul Vollmer <paul.vollmer@fh-potsdam.de>",
+  "license": "MIT",
   "main": "text-backend.js",
   "scripts": {
     "test": "node node_modules/jshint/bin/jshint *.js */**.js && node node_modules/mocha/bin/mocha -R spec"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulvollmer/text-backend.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulvollmer/text-backend.js/issues"
+  },
+  "homepage": "https://github.com/paulvollmer/text-backend.js",
   "devDependencies": {
     "mocha": "2.1.0",
     "jshint": "2.6.0"
