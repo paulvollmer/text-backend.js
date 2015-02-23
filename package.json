@@ -1,0 +1,14 @@
+{
+  "name": "text-backend.js",
+  "version": "0.1.0",
+  "description": "text writer with level support",
+  "author": "Paul Vollmer <paul.vollmer@fh-potsdam.de>",
+  "main": "text-backend.js",
+  "scripts": {
+    "test": "node node_modules/jshint/bin/jshint *.js */**.js && node node_modules/mocha/bin/mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "2.1.0",
+    "jshint": "2.6.0"
+  }
+}
