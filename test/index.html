@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>text-backend.js</title>
+    <script type="text/javascript" src="./text-backend.js"></script>
+  </head>
+  <body>
+    <h1><a href="#">text-backend.js</a></h1>
+    <div>
+      <pre id="output" style="font-family:'monospace';"></pre>
+    </div>
+    <script>
+      function setOutput(text) {
+        document.getElementById('output').innerHTML = text;
+      }
+
+      window.onload = function() {
+        var text = new TextBackend();
+        text.write('hello,')
+            .write('text-backend.js is designed to create source code like:')
+            .write()
+            .pushLevel()
+            .write('function hello() {')
+            .pushLevel()
+            .write('return "hello world"')
+            .popLevel()
+            .write('}')
+        var t = text.getString();
+        console.log(t);
+        setOutput(t);
+      }
+    </script>
+  </body>
+</html>
